@@ -26,3 +26,11 @@ $CAFFE_HOME/build/tools/convert_imageset -resize_height=224 -resize_width=224 / 
 + multilabel_googlenet_iter_250000.caffemodel   :model weights
 + solver.prototxt                               :solver prototxt
 + runtrain.sh                                   :run script
+
+### accuracy.py
++ compute accuracy for the last layer
++ before run the model, you need :
+```
+export PYTHONPATH=$CAFFE_HOME
+```
+ 
