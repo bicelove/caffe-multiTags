@@ -1,0 +1,30 @@
+tools/convert_imageset_imgAndLabels.cpp: In function 'int main(int, char**)':
+tools/convert_imageset_imgAndLabels.cpp:172:20: error: no matching function for call to 'ReadImageToDatum(std::basic_string<char>, std::vector<float>&, int&, int&, const bool&, std::string&, caffe::Datum*)'
+         enc, &datum);
+                    ^
+tools/convert_imageset_imgAndLabels.cpp:172:20: note: candidates are:
+In file included from tools/convert_imageset_imgAndLabels.cpp:25:0:
+./include/caffe/util/io.hpp:99:6: note: bool caffe::ReadImageToDatum(const string&, std::vector<int>, int, int, bool, const string&, caffe::Datum*)
+ bool ReadImageToDatum(const string& filename, const vector<int> label,
+      ^
+./include/caffe/util/io.hpp:99:6: note:   no known conversion for argument 2 from 'std::vector<float>' to 'std::vector<int>'
+./include/caffe/util/io.hpp:103:13: note: bool caffe::ReadImageToDatum(const string&, std::vector<int>, int, int, bool, caffe::Datum*)
+ inline bool ReadImageToDatum(const string& filename, const vector<int> label,
+             ^
+./include/caffe/util/io.hpp:103:13: note:   candidate expects 6 arguments, 7 provided
+./include/caffe/util/io.hpp:109:13: note: bool caffe::ReadImageToDatum(const string&, std::vector<int>, int, int, caffe::Datum*)
+ inline bool ReadImageToDatum(const string& filename, const vector<int> label,
+             ^
+./include/caffe/util/io.hpp:109:13: note:   candidate expects 5 arguments, 7 provided
+./include/caffe/util/io.hpp:114:13: note: bool caffe::ReadImageToDatum(const string&, std::vector<int>, bool, caffe::Datum*)
+ inline bool ReadImageToDatum(const string& filename, const vector<int> label,
+             ^
+./include/caffe/util/io.hpp:114:13: note:   candidate expects 4 arguments, 7 provided
+./include/caffe/util/io.hpp:119:13: note: bool caffe::ReadImageToDatum(const string&, std::vector<int>, caffe::Datum*)
+ inline bool ReadImageToDatum(const string& filename, const vector<int> label,
+             ^
+./include/caffe/util/io.hpp:119:13: note:   candidate expects 3 arguments, 7 provided
+./include/caffe/util/io.hpp:124:13: note: bool caffe::ReadImageToDatum(const string&, std::vector<int>, const string&, caffe::Datum*)
+ inline bool ReadImageToDatum(const string& filename, const vector<int> label,
+             ^
+./include/caffe/util/io.hpp:124:13: note:   candidate expects 4 arguments, 7 provided

@@ -15,7 +15,7 @@ folder/sample001.jpg 6 3 2 1 0
 + [caffe 实现多标签输入（multilabel、multitask）](http://blog.csdn.net/hubin232/article/details/50960201)
 
 ### makeRecord.md
-+ This script records the problems encountered during the compilation “make” process
++ This script records the bug encountered during the compilation of “make”
 
 ### tools/convert_imageset.cpp
 ```
