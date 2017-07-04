@@ -2,7 +2,7 @@
 a caffe version for multiTags job
 
 ## input data format:
-+ 7 labels for all; 1 for the correct label and 0 for the incorrect label;
++ 7 labels for all;
 ```
 folder/sample001.jpg 0 1
 folder/sample001.jpg 2 3 5
